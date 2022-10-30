@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cereal Rating Prediction</title>
+</head>
+
+<body style="background-color: rgba(202, 75, 122, 0.447);">
+
+    <h1> Cereal Rating Prediction </h1>
+    <form method="POST" action="/predict_rating">
+
+        <label>MFR:</label>
+        <label>K</label> <input type = "radio" name= "mfr" value = "K">
+        <label>G</label> <input type = "radio" name= "mfr" value = "G">
+        <label>P</label> <input type = "radio" name= "mfr" value = "P">
+        <label>Q</label> <input type = "radio" name= "mfr" value = "Q">
+        <label>R</label> <input type = "radio" name= "mfr" value = "R">
+        <label>N</label> <input type = "radio" name= "mfr" value = "N">
+        <label>A</label> <input type = "radio" name= "mfr" value = "A">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Types:</label>
+        <label>C</label> <input type = "radio" name= "types" value = "C">
+        <label>H</label> <input type = "radio" name= "types" value = "H">
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Calories:</label>
+        <input type = "text" name = "calories">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Protein:</label>
+        <input type = "text" name = "protein">
+        </select>
+
+        
+
+        <br>
+        <br>
+
+        <label>Fat:</label>
+        <input type = "text" name = "fat">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Sodium:</label>
+        <input type = "text" name = "sadium">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Fiber:</label>
+        <input type = "text" name = "fiber">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Carbo:</label>
+        <input type = "text" name = "carbo">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Sugars:</label>
+        <input type = "text" name = "sugars">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Potass:</label>
+        <input type = "text" name = "potass">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Shelf:</label>
+        <input type = "text" name = "shelf">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Cups:</label>
+        <input type = "text" name = "cups">
+        </select>
+
+
+        <br>
+        <br>
+
+
+        <label>Name:</label>
+        <select name = "name">
+            <option value = "100% Bran">100% Bran</option>
+            <option value = "100% Natural Bran">100% Natural Bran</option>
+            <option value = "All-Bran">All-Bran</option>
+            <option value = "All-Bran with Extra Fiber">All-Bran with Extra Fiber</option>
+            <option value = "Almond Delight">Almond Delight</option>
+            <option value = "Apple Cinnamon Cheerios">Apple Cinnamon Cheerios</option>
+            <option value = "Apple Jacks">Apple Jacks</option>
+            <option value = "Basic 4">Basic 4</option>
+            <option value = "Bran Chex">Bran Chex</option>
+            <option value = "Bran Flakes">Bran Flakes</option>
+            <option value = "Cap'n'Crunch">Cap'n'Crunch</option>
+            <option value = "Cheerios">Cheerios</option>
+            <option value = "Cinnamon Toast Crunch">Cinnamon Toast Crunch</option>
+            <option value = "Clusters">Clusters</option>
+            <option value = "Cocoa Puffs">Cocoa Puffs</option>
+            <option value = "Corn Chex">Corn Chex</option>
+            <option value = "Corn Flakes">Corn Flakes</option>
+            <option value = "Corn Pops">Corn Pops</option>
+            <option value = "Count Chocula">Count Chocula</option>
+            <option value = "Cracklin' Oat Bran">Cracklin' Oat Bran</option>
+            <option value = "Cream of Wheat (Quick)">Cream of Wheat (Quick)</option>
+            <option value = "Crispix">Crispix</option>
+            <option value = "Crispy Wheat & Raisins">Crispy Wheat & Raisins</option>
+            <option value = "Double Chex">Double Chex</option>
+            <option value = "Froot Loops">Froot Loops</option>
+            <option value = "Frosted Flakes">Frosted Flakes</option>
+            <option value = "Frosted Mini-Wheats">Frosted Mini-Wheats</option>
+            <option value = "Fruit & Fibre Dates; Walnuts; and Oats">Fruit & Fibre Dates; Walnuts; and Oats</option>
+            <option value = "Fruitful Bran">Fruitful Bran</option>
+            <option value = "Fruity Pebbles">Fruity Pebbles</option>
+            <option value = "Golden Crisp">Golden Crisp</option>
+            <option value = "Golden Grahams">Golden Grahams</option>
+            <option value = "Grape Nuts Flakes">Grape Nuts Flakes</option>
+            <option value = "Grape-Nuts">Grape-Nuts</option>
+            <option value = "Great Grains Pecan">Great Grains Pecan</option>
+            <option value = "Honey Graham Ohs">Honey Graham Ohs</option>
+            <option value = "Honey Nut Cheerios">Honey Nut Cheerios</option>
+            <option value = "Honey-comb">Honey-comb</option>
+            <option value = "Just Right Crunchy  Nuggets">Just Right Crunchy  Nuggets</option>
+            <option value = "Just Right Fruit & Nut">Just Right Fruit & Nut</option>
+            <option value = "Kix">Kix</option>
+            <option value = "Life">Life</option>
+            <option value = "Lucky Charms">Lucky Charms</option>
+            <option value = "Maypo">Maypo</option>
+            <option value = "Muesli Raisins; Dates; & Almonds">Muesli Raisins; Dates; & Almonds</option>
+            <option value = "Muesli Raisins; Peaches; & Pecans">Muesli Raisins; Peaches; & Pecans</option>
+            <option value = "Mueslix Crispy Blend">Mueslix Crispy Blend</option>
+            <option value = "Multi-Grain Cheerios">Multi-Grain Cheerios</option>
+            <option value = "Nut&Honey Crunch">Nut&Honey Crunch</option>
+            <option value = "Nutri-Grain Almond-Raisin">Nutri-Grain Almond-Raisin</option>
+            <option value = "Nutri-grain Wheat">Nutri-grain Wheat</option>
+            <option value = "Oatmeal Raisin Crisp">Oatmeal Raisin Crisp</option>
+            <option value = "Post Nat. Raisin Bran">Post Nat. Raisin Bran</option>
+            <option value = "Product 19">Product 19</option>
+            <option value = "Puffed Rice">Puffed Rice</option>
+            <option value = "Puffed Wheat">Puffed Wheat</option>
+            <option value = "Quaker Oat Squares">Quaker Oat Squares</option>
+            <option value = "Quaker Oatmeal">Quaker Oatmeal</option>
+            <option value = "Raisin Bran">Raisin Bran</option>
+            <option value = "Raisin Nut Bran">Raisin Nut Bran</option>
+            <option value = "Raisin Squares">Raisin Squares</option>
+            <option value = "Rice Chex">Rice Chex</option>
+            <option value = "Rice Krispies">Rice Krispies</option>
+            <option value = "Shredded Wheat">Shredded Wheat</option>
+            <option value = "Shredded Wheat 'n'Bran">Shredded Wheat 'n'Bran</option>
+            <option value = "Shredded Wheat spoon size">Shredded Wheat spoon size</option>
+            <option value = "Smacks">Smacks</option>
+            <option value = "Special K">Special K</option>
+            <option value = "Strawberry Fruit Wheats">Strawberry Fruit Wheats</option>
+            <option value = "Total Corn Flakes">Total Corn Flakes</option>
+            <option value = "Total Raisin Bran">Total Raisin Bran</option>
+            <option value = "Total Whole Grain">Total Whole Grain</option>
+            <option value = "Triples">Triples</option>
+            <option value = "Trix">Trix</option>
+            <option value = "Wheat Chex">Wheat Chex</option>
+            <option value = "Wheaties">Wheaties</option>
+            <option value = "Wheaties Honey Gold">Wheaties Honey Gold</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p>Cereal Rating is  <b> {{ prediction }} %.</b> </p>
+
+
+    </form>
+
+
+</body>
+</html>
